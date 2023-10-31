@@ -1,0 +1,484 @@
+[
+    {
+        "id":1,
+        "img":"../../../images/imgnew1.jpg",
+        "download":"",
+        "name":"Proud of you",
+        "detail":{
+            "d1":"Carnation orange bunch: 2",
+            "d2":"Free Spirit Rose (10): 15",
+            "d3":"Orange pink :5",
+            "d4":"",
+            "d5":""
+        },
+        "brands":{
+            "id":2,
+            "name":"Rose"
+        },
+        "category":{
+            "id":2,
+            "name":"Rose"
+        },
+        "price":"24.99",
+        "new":1,
+        "top":2
+        
+    },
+    {
+        "id":2,
+        "img":"../../../images/imgnew2.jpg",
+        "download":"",
+        "name":"Dreamy day",
+        "detail":{
+            "d1":"Single carnation with purple border: 5",
+            "d2":"Purple calimero chrysanthemum: 5",
+            "d3":"Red rose: 5",
+            "d4":"Pink purple eggplant: 3",
+            "d5":"The wolf's muzzle is filled with joy: 10"
+        },
+        "brands":{
+            "id":1,
+            "name":"Rose"
+        },
+        "category":{
+            "id":2,
+            "name":"Rose"
+        },
+        "price":"19.99",
+        "new":1,
+        "top":1
+    },
+    {
+        "id":3,
+        "img":"../../../images/imgnew3.jpg",
+        "download":"",
+        "name":" A Thousand years",
+        "detail":{
+            "d1":"Tana chrysanthemum: 2",
+            "d2":"Yellow calimero daisies with brown pistils: 8",
+            "d3":"Pink ohara yellow: 10",
+            "d4":"The wolf's muzzle is filled with joy: 10",
+            "d5":""
+        },
+        "brands":{
+            "id":1,
+            "name":"Rose"
+        },
+        "category":{
+            "id":2,
+            "name":"Rose"
+        },
+        "price":"39.99",
+        "new":1,
+        "top":1
+    },
+    {
+        "id":4,
+        "img":"../../../images/imgnew4.jpg",
+        "download":"",
+        "name":"Left time autumn",
+
+        "detail":{
+            "d1":"Yellow Phalaenopsis orchids: 1",
+            "d2":"Orange roses: 10",
+            "d3":"Candle yellow Mokara orchids: 10",
+            "d4":"orchids: 8",
+            "d5":"stone Lotus: 1"
+        },
+        "brands":{
+            "id":1,
+            "name":"Rose"
+        },
+        "category":{
+            "id":2,
+            "name":"Rose"
+        },
+        "price":"69.99",
+        "new":1,
+        "top":1
+    },
+    {
+        "id":5,
+        "img":"../../../images/imgnew5.jpg",
+        "download":"",
+        "name":"Winter Sonata",
+        "detail":{
+            "d1":"green carnations: 10",
+            "d2":"blue lisianthus: 2",
+            "d3":"Baby flowers: 0.5",
+            "d4":"Moonlight yellow rose: 7",
+            "d5":"Yellow Wolf Snout Flower: 10"
+        },
+        "brands":{
+            "id":1,
+            "name":"Rose"
+        },
+        "category":{
+            "id":2,
+            "name":"Rose"
+        },
+        "price":"24.99",
+        "new":1,
+        "top":1
+    },
+    {
+        "id":6,
+        "img":"../../../images/imgnew6.jpg",
+        "download":"",
+        "name":"Color Life ",
+        "detail":{
+            "d1":"Blue Chrysanthemum flowers: 5",
+            "d2":"orange peony: 3",
+            "d3":"White cut Phalaenopsis orchids: 1",
+            "d4":"Candle yellow Mokara orchids: 15",
+            "d5":"Chicken egg roses: 15"
+        },
+        "brands":{
+            "id":2,
+            "name":"Rose"
+        },
+        "category":{
+            "id":2,
+            "name":"Rose"
+        },
+        "price":"84.99",
+        "new":1,
+        "top":1
+    },
+    {
+        "id":7,
+        "img":"../../../images/imgnew7.jpg",
+        "download":"",
+        "name":"Chrysanthemum vase",
+        "detail":{
+            "d1":"White peony chrysanthemum: 4",
+            "d2":"Yellow peony chrysanthemum: 6",
+            "d3":"White cut Phalaenopsis orchids: 1",
+            "d4":"Purple Star Flower: 1",
+            "d5":"White Gerbera Flower: 11"
+        },
+        "brands":{
+            "id":2,
+            "name":"Rose"
+        },
+        "category":{
+            "id":2,
+            "name":"Rose"
+        },
+        "price":"84.99",
+        "new":1,
+        "top":1
+    },
+    {
+        "id":8,
+        "img":"../../../images/imgnew8.jpg",
+        "download":"",
+        "name":"High quality red roses",
+        "detail":{
+            "d1":"Ecuadorian Rose explorer: 25",
+            "d2":"Red Elegance : 15",
+            "d3":"",
+            "d4":"",
+            "d5":""
+        },
+        "brands":{
+            "id":2,
+            "name":"Rose"
+        },
+        "category":{
+            "id":2,
+            "name":"Rose"
+        },
+        "price":"199.99",
+        "new":1,
+        "top":1
+    },
+    {
+        "id":9,
+        "img":"../../../images/imgnew9.jpg",
+        "download":"",
+        "name":"Premium vase",
+        "detail":{
+            "d1":"Light blue Chrysanthemum peony: 5",
+            "d2":"Blue peony chrysanthemum: 6",
+            "d3":"Purple cut Phalaenopsis orchids: 2",
+            "d4":"Ecuadorian Rose explorer: 10",
+            "d5":"Purple Mokara Orchids: 3"
+        },
+        "brands":{
+            "id":2,
+            "name":"Rose"
+        },
+        "category":{
+            "id":2,
+            "name":"Rose"
+        },
+        "price":"124.99",
+        "new":1,
+        "top":1
+    },
+    {
+        "id":10,
+        "img":"../../../images/imgnew10.jpg",
+        "download":"",
+        "name":"Blue chrysanthemum",
+        "detail":{
+            "d1":"Single yellow carnation: 25",
+            "d2":"Light blue Chrysanthemum peony: 25",
+            "d3":"Blue peony chrysanthemum: 15",
+            "d4":"Baby flower: 2",
+            "d5":""
+        },
+        "brands":{
+            "id":2,
+            "name":"Rose"
+        },
+        "category":{
+            "id":2,
+            "name":"Rose"
+        },
+        "price":"279.99",
+        "new":1,
+        "top":2
+    },
+    {
+        "id":11,
+        "img":"../../../images/imgnew11.jpg",
+        "download":"",
+        "name":"Peony chrysanthemum",
+        "detail":{
+            "d1":"Baby flowers dyed light pink: 1",
+            "d2":"Peach pink chrysanthemum peony: 12",
+            "d3":"Purple Star Flower: 1",
+            "d4":"The wolf's muzzle is filled with joy: 15",
+            "d5":"Pink OHara: 7"
+        },
+        "brands":{
+            "id":2,
+            "name":"Rose"
+        },
+        "category":{
+            "id":2,
+            "name":"Rose"
+        },
+        "price":"79.99",
+        "new":1,
+        "top":2
+    },
+    {
+        "id":12,
+        "img":"../../../images/imgnew12.jpg",
+        "download":"",
+        "name":"Damask",
+        "detail":{
+            "d1":"Single pink carnations: 10",
+            "d2":"Pink Chrysanthemum: 5",
+            "d3":"Ecuadorian Rose explorer: 8",
+            "d4":"Roses of two joys: 15",
+            "d5":""
+        },
+        "brands":{
+            "id":2,
+            "name":"Rose"
+        },
+        "category":{
+            "id":2,
+            "name":"Rose"
+        },
+        "price":"179.99",
+        "new":1,
+        "top":2
+    },
+    {
+        "id":13,
+        "img":"../../../images/imgbrt1.jpg",
+        "download":"",
+        "name":" Everyday with you",
+        "detail":{
+            "d1":"Baby flowers: 1",
+            "d2":"Blue roses: 3",
+            "d3":"",
+            "d4":"",
+            "d5":""
+        },
+        "brands":{
+            "id":2,
+            "name":"Rose"
+        },
+        "category":{
+            "id":2,
+            "name":"Rose"
+        },
+        "price":"14.99",
+        "new":2,
+        "top":2
+    },
+    {
+        "id":14,
+        "img":"../../../images/imgbrt2.jpg",
+        "download":"",
+        "name":"Passionate",
+        "detail":{
+            "d1":"Purple heather: 2",
+            "d2":"New Lotus Rose: 5",
+            "d3":"White Rose : 5",
+            "d4":"",
+            "d5":""
+        },
+        "brands":{
+            "id":2,
+            "name":"Rose"
+        },
+        "category":{
+            "id":2,
+            "name":"Rose"
+        },
+        "price":"14.99",
+        "new":2,
+        "top":2
+    },
+    {
+        "id":15,
+        "img":"../../../images/imgbrt3.jpg",
+        "download":"",
+        "name":"Hundred years of love",
+        "detail":{
+            "d1":"Baby flowers: 1",
+            "d2":"Red roses: 100",
+            "d3":"",
+            "d4":"",
+            "d5":""
+        },
+        "brands":{
+            "id":2,
+            "name":"Rose"
+        },
+        "category":{
+            "id":2,
+            "name":"Rose"
+        },
+        "price":"119.99",
+        "new":2,
+        "top":2
+    },
+    {
+        "id":16,
+        "img":"../../../images/imgbrt4.jpg",
+        "download":"",
+        "name":"Keep you in my heart",
+        "detail":{
+            "d1":"Light pink carnations: 10 ",
+            "d2":"Baby flowers: 1",
+            "d3":"Skin Roses: 100",
+            "d4":"",
+            "d5":""
+        },
+        "brands":{
+            "id":2,
+            "name":"Rose"
+        },
+        "category":{
+            "id":2,
+            "name":"Rose"
+        },
+        "price":"119.99",
+        "new":2,
+        "top":2
+    },
+    {
+        "id":17,
+        "img":"../../../images/imgbrt5.jpg",
+        "download":"",
+        "name":"Sunny day",
+        "detail":{
+            "d1":"Light orange Chrysanthemum peony: 3 ",
+            "d2":"Sunflower: 18",
+            "d3":"Chicken egg roses: 15",
+            "d4":"",
+            "d5":""
+        },
+        "brands":{
+            "id":1,
+            "name":"Rose"
+        },
+        "category":{
+            "id":1,
+            "name":"Rose"
+        },
+        "price":"99.99",
+        "new":2,
+        "top":2
+    },
+    {
+        "id":18,
+        "img":"../../../images/imgbrt6.jpg",
+        "download":"",
+        "name":"Downy",
+        "detail":{
+            "d1":"White rossi chrysanthemum: 10",
+            "d2":"White Phalaenopsis orchids: 5",
+            "d3":"New Lotus Rose: 5",
+            "d4":"",
+            "d5":""
+        },
+        "brands":{
+            "id":2,
+            "name":"Rose"
+        },
+        "category":{
+            "id":3,
+            "name":"Rose"
+        },
+        "price":"39.99",
+        "new":2,
+        "top":2
+    },
+    {
+        "id":19,
+        "img":"../../../images/imgbrt7.jpg",
+        "download":"",
+        "name":"Blue sky",
+        "detail":{
+            "d1":"White auspicious wall: 5",
+            "d2":"Light blue Chrysanthemum peony : 7",
+            "d3":"White Rose: 15",
+            "d4":"",
+            "d5":""
+        },
+        "brands":{
+            "id":2,
+            "name":"Rose"
+        },
+        "category":{
+            "id":2,
+            "name":"Rose"
+        },
+        "price":"69.99",
+        "new":2,
+        "top":2
+    },
+    {
+        "id":20,
+        "img":"../../../images/imgbrt8.jpg",
+        "download":"",
+        "name":"Keep loving",
+        "detail":{
+            "d1":"Peach pink chrysanthemum peony: 5",
+            "d2":"London Orange Rose: 6",
+            "d3":"Red velvet roses: 5",
+            "d4":"Red Lace Orchids: 10",
+            "d5":"Red Elegance : 12"
+        },
+        "brands":{
+            "id":2,
+            "name":"Rose"
+        },
+        "category":{
+            "id":3,
+            "name":"Rose"
+        },
+        "price":"69.99",
+        "new":2,
+        "top":2
+    }
+]
