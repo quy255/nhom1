@@ -5,15 +5,15 @@ import products from '../data.json'
 import { Link } from 'react-router-dom';
 import { useParams } from "react-router-dom";
 
-function Categori() {
+function Brands() {
   const {id} = useParams();
-  let items = products.filter((items) => items.category.id == id);
+  let items = products.filter((items) => items.topic.id == id);
   console.log(items);
   return (
     <Container>
     <Row>
       <Col xs={12} sm={12} md={12}>
-      <h1>Categori</h1>
+      <h1>Brands</h1>
       </Col>
     </Row>
     <div >
@@ -43,4 +43,4 @@ function Categori() {
   )
 }
 
-export default Categori
+export default Brands

@@ -5,13 +5,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Mainmenu from "./compoment/Mainmenu/Mainmenu"
 import Footer from './compoment/Footer/Footer';
-import Products from './compoment/Products/Products';
+
 import { Route , Routes } from 'react-router-dom';
 import Homepage from './compoment/Homepage/Homepage';
 import ProductsDetail from './compoment/Products/ProductsDetail';
 import Categori from './compoment/Categories/Categori';
-import Brands from "./compoment/Brands/Brands"
-
+import Brands from "./compoment/Brands/Brands";
+import Produc from "./compoment/Products/Produc"
 function App() {
   return (
     <Container fluid="md">
@@ -28,7 +28,7 @@ function App() {
       </Row>
      <Routes>
       <Route path='/' element={<Homepage />}></Route>
-      <Route path='/products' element={<Products />}></Route>
+      <Route path='/products/:id' element={<Produc />}></Route>
       <Route path='/detail/:id' element={<ProductsDetail />}></Route>
       <Route path='/categories/:id' element={<Categori />}></Route>
       <Route path='/brands/:id' element={<Brands />}></Route>
@@ -42,4 +42,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

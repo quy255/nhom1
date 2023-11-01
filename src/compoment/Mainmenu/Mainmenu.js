@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Categories from "../Categories/Categori.json"
 import Brands from '../Brands/Brands.json';
+import Products from '../Products/data.json';
 
 
 
@@ -23,7 +24,14 @@ function mainmenu() {
             navbarScroll
           >
             <Nav.Link href="/" >Homepage</Nav.Link>
-            <Nav.Link href="/products">Products</Nav.Link>
+            <NavDropdown title="Products" id="navbarScrollingDropdown"> 
+            {Products.map((items , index ) =>(
+              <NavDropdown.Item href={`/products/${items.id}`} key={index}>
+                {items.name}
+                </NavDropdown.Item>
+              ))}
+            </NavDropdown>
+           
             <NavDropdown title="Categori" id="navbarScrollingDropdown"> 
             {Categories.map((items , index ) =>(
               <NavDropdown.Item href={`/categories/${items.id}`} key={index}>
@@ -40,8 +48,6 @@ function mainmenu() {
             </NavDropdown>
 
             <Nav.Link href="#" disabled>
-              services
-            </Nav.Link> <Nav.Link href="#" disabled>
              contact
             </Nav.Link> <Nav.Link href="#" disabled>
               About AS

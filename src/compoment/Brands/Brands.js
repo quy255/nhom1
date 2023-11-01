@@ -4,16 +4,23 @@ import Card from 'react-bootstrap/Card';
 import products from '../data.json'
 import { Link } from 'react-router-dom';
 import { useParams } from "react-router-dom";
-
+import { Alert } from 'react-bootstrap';
 function Brands() {
   const {id} = useParams();
   let items = products.filter((items) => items.brands.id == id);
   console.log(items);
+  let b = products.filter((b) => b.brands.id == id);
+  b = b[0];
   return (
     <Container>
+      {b == null && (
+        <Alert>
+          <h1 className='text-center'>Updating Products...</h1>
+        </Alert>
+      )}
     <Row>
       <Col xs={12} sm={12} md={12}>
-      <h1>Brands</h1>
+        {b != null && <h1>{b.brands.name} </h1>}
       </Col>
     </Row>
     <div >

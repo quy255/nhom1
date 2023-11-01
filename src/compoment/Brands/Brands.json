@@ -1,18 +1,10 @@
 [
     {
         "id":1,
-        "name":"Birthday"
+        "name":"Local Brand"
     },
     {
         "id":2,
-        "name":"Anniversary"
-    },
-    {
-        "id":3,
-        "name":"marriage"
-    },
-    {
-        "id":4,
-        "name":"love"
+        "name":"International Brand"
     }
 ]
