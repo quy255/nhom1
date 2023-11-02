@@ -10,7 +10,7 @@ function Homepage() {
     <Container >
     <Row>
     <Col xs={12} sm={12} md={12}><Featerproducts /></Col>
-  </Row>x
+  </Row>
   <Row>
     <Col xs={12} sm={12} md={12}><Newproducts /></Col>
   </Row>

@@ -1,0 +1,9 @@
+.pagination{
+    margin: 10px;
+    padding: 10px;
+    color: aquamarine;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}

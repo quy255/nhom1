@@ -7,24 +7,23 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Categories from "../Categories/Categori.json"
 import Brands from '../Brands/Brands.json';
 import Products from '../Products/data.json';
+import"./Mainmenu.css"
 
-
-
+import Logo from "../../Data/Logo/logo.png"
+import { Link } from "react-router-dom";
 
 function mainmenu() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="">
       <Container fluid>
-        <Navbar.Brand href="#"></Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-            <Nav.Link href="/" >Homepage</Nav.Link>
-            <NavDropdown title="Products" id="navbarScrollingDropdown"> 
+        <Navbar.Brand href="/">
+          <img src={Logo} alt='logo' className='logo'></img>
+        </Navbar.Brand>
+        <Navbar.Toggle />
+        <Navbar.Collapse  >
+          <Nav >
+            <Nav.Link href="/" className='aaa'>Homepage</Nav.Link>
+            <NavDropdown title="Products" id="navbarScrollingDropdown" className='aaa'> 
             {Products.map((items , index ) =>(
               <NavDropdown.Item href={`/products/${items.id}`} key={index}>
                 {items.name}
@@ -32,14 +31,14 @@ function mainmenu() {
               ))}
             </NavDropdown>
            
-            <NavDropdown title="Categori" id="navbarScrollingDropdown"> 
+            <NavDropdown title="Categori" id="navbarScrollingDropdown" className='aaa'> 
             {Categories.map((items , index ) =>(
               <NavDropdown.Item href={`/categories/${items.id}`} key={index}>
                 {items.name}
                 </NavDropdown.Item>
               ))}
             </NavDropdown>
-            <NavDropdown title="Brands" id="navbarScrollingDropdown"> 
+            <NavDropdown title="Brands" id="navbarScrollingDropdown" className='aaa'> 
             {Brands.map((items ,index ) =>(
               <NavDropdown.Item href={`/brands/${items.id}`} key={index}>
                 {items.name}
@@ -47,13 +46,13 @@ function mainmenu() {
               ))}
             </NavDropdown>
 
-            <Nav.Link href="#" disabled>
-             contact
-            </Nav.Link> <Nav.Link href="#" disabled>
-              About AS
+            <Nav.Link as={Link} to={"/contact-us"} className='aaa'>
+              <span className="menu">Contact US</span>
+            </Nav.Link> <Nav.Link as={Link} to={"/about-us"} className='aaa'>
+              <span className="menu">About US</span>
             </Nav.Link>
-            <Nav.Link href="#" disabled>
-              Compare
+            <Nav.Link as={Link} to={"/compare-us"} className='aaa'>
+              <span className="menu">Compare</span>
             </Nav.Link>
           </Nav>
           <Form className="d-flex">

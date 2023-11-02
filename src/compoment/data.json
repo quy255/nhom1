@@ -2,7 +2,7 @@
     {
         "id":1,
         "img":"../../../images/imgnew1.jpg",
-        "download":"",
+        "download":"../../../download/1/imgnew1.pdf",
         "name":"Proud of you",
         "detail":{
             "d1":"Carnation orange bunch: 2",
@@ -24,14 +24,14 @@
             "name":"Chrysanthemum"
         },
         "price":"24.99",
-        "new":1,
+        "new":2,
         "top":2
         
     },
     {
         "id":2,
         "img":"../../../images/imgnew2.jpg",
-        "download":"",
+        "download":"../../../download/1/imgnew2.pdf",
         "name":"Dreamy day",
         "detail":{
             "d1":"Single carnation with purple border: 5",
@@ -53,13 +53,13 @@
             "name":"Chrysanthemum"
         },
         "price":"19.99",
-        "new":1,
-        "top":1
+        "new":2,
+        "top":2
     },
     {
         "id":3,
         "img":"../../../images/imgnew3.jpg",
-        "download":"",
+        "download":"../../../download/1/imgnew.pdf",
         "name":" A Thousand years",
         "detail":{
             "d1":"Tana chrysanthemum: 2",
@@ -81,13 +81,13 @@
             "name":"Chrysanthemum"
         },
         "price":"39.99",
-        "new":1,
-        "top":1
+        "new":2,
+        "top":2
     },
     {
         "id":4,
         "img":"../../../images/imgnew4.jpg",
-        "download":"",
+        "download":"../../../download/1/imgnew4.pdf",
         "name":"Left time autumn",
 
         "detail":{
@@ -110,13 +110,13 @@
             "name":"Chrysanthemum"
         },
         "price":"69.99",
-        "new":1,
-        "top":1
+        "new":2,
+        "top":2
     },
     {
         "id":5,
         "img":"../../../images/imgnew5.jpg",
-        "download":"",
+        "download":"../../../download/1/imgnew5.pdf",
         "name":"Winter Sonata",
         "detail":{
             "d1":"green carnations: 10",
@@ -138,13 +138,13 @@
             "name":"Chrysanthemum"
         },
         "price":"24.99",
-        "new":1,
+        "new":2,
         "top":1
     },
     {
         "id":6,
         "img":"../../../images/imgnew6.jpg",
-        "download":"",
+        "download":"../../../download/1/imgnew6.pdf",
         "name":"Color Life ",
         "detail":{
             "d1":"Blue Chrysanthemum flowers: 5",
@@ -166,13 +166,13 @@
             "name":"Chrysanthemum"
         },
         "price":"84.99",
-        "new":1,
-        "top":1
+        "new":2,
+        "top":2
     },
     {
         "id":7,
         "img":"../../../images/imgnew7.jpg",
-        "download":"",
+        "download":"../../../download/1/imgnew7.pdf",
         "name":"Chrysanthemum vase",
         "detail":{
             "d1":"White peony chrysanthemum: 4",
@@ -194,13 +194,13 @@
             "name":"Chrysanthemum"
         },
         "price":"84.99",
-        "new":1,
-        "top":1
+        "new":2,
+        "top":2
     },
     {
         "id":8,
         "img":"../../../images/imgnew8.jpg",
-        "download":"",
+        "download":"../../../download/1/imgnew8.pdf",
         "name":"High quality red roses",
         "detail":{
             "d1":"Ecuadorian Rose explorer: 25",
@@ -222,13 +222,13 @@
             "name":"lilies"
         },
         "price":"199.99",
-        "new":1,
-        "top":1
+        "new":2,
+        "top":2
     },
     {
         "id":9,
         "img":"../../../images/imgnew9.jpg",
-        "download":"",
+        "download":"../../../download/1/imgnew9.pdf",
         "name":"Premium vase",
         "detail":{
             "d1":"Light blue Chrysanthemum peony: 5",
@@ -251,12 +251,12 @@
         },
         "price":"124.99",
         "new":1,
-        "top":1
+        "top":2
     },
     {
         "id":10,
         "img":"../../../images/imgnew10.jpg",
-        "download":"",
+        "download":"../../../download/1/imgnew10.pdf",
         "name":"Blue chrysanthemum",
         "detail":{
             "d1":"Single yellow carnation: 25",
@@ -278,13 +278,13 @@
             "name":"lilies"
         },
         "price":"279.99",
-        "new":1,
+        "new":2,
         "top":2
     },
     {
         "id":11,
         "img":"../../../images/imgnew11.jpg",
-        "download":"",
+        "download":"../../../download/1/imgnew11.pdf",
         "name":"Peony chrysanthemum",
         "detail":{
             "d1":"Baby flowers dyed light pink: 1",
@@ -306,13 +306,13 @@
             "name":"lilies"
         },
         "price":"79.99",
-        "new":1,
+        "new":2,
         "top":2
     },
     {
         "id":12,
         "img":"../../../images/imgnew12.jpg",
-        "download":"",
+        "download":"../../../download/1/imgnew12.pdf",
         "name":"Damask",
         "detail":{
             "d1":"Single pink carnations: 10",
@@ -334,13 +334,13 @@
             "name":"lilies"
         },
         "price":"179.99",
-        "new":1,
+        "new":2,
         "top":2
     },
     {
         "id":13,
         "img":"../../../images/imgbrt1.jpg",
-        "download":"",
+        "download":"../../../download/1/imgbrt1.pdf",
         "name":" Everyday with you",
         "detail":{
             "d1":"Baby flowers: 1",
@@ -368,7 +368,7 @@
     {
         "id":14,
         "img":"../../../images/imgbrt2.jpg",
-        "download":"",
+        "download":"../../../download/1/imgbrt2.pdf",
         "name":"Passionate",
         "detail":{
             "d1":"Purple heather: 2",
@@ -396,7 +396,7 @@
     {
         "id":15,
         "img":"../../../images/imgbrt3.jpg",
-        "download":"",
+        "download":"../../../download/1/imgbrt3.pdf",
         "name":"Hundred years of love",
         "detail":{
             "d1":"Baby flowers: 1",
@@ -424,7 +424,7 @@
     {
         "id":16,
         "img":"../../../images/imgbrt4.jpg",
-        "download":"",
+        "download":"../../../download/1/imgbrt4.pdf",
         "name":"Keep you in my heart",
         "detail":{
             "d1":"Light pink carnations: 10 ",
@@ -452,7 +452,7 @@
     {
         "id":17,
         "img":"../../../images/imgbrt5.jpg",
-        "download":"",
+        "download":"../../../download/1/imgbrt5.pdf",
         "name":"Sunny day",
         "detail":{
             "d1":"Light orange Chrysanthemum peony: 3 ",
@@ -480,7 +480,7 @@
     {
         "id":18,
         "img":"../../../images/imgbrt6.jpg",
-        "download":"",
+        "download":"../../../download/1/imgbrt6.pdf",
         "name":"Downy",
         "detail":{
             "d1":"White rossi chrysanthemum: 10",
@@ -508,7 +508,7 @@
     {
         "id":19,
         "img":"../../../images/imgbrt7.jpg",
-        "download":"",
+        "download":"../../../download/1/imgbrt7.pdf",
         "name":"Blue sky",
         "detail":{
             "d1":"White auspicious wall: 5",
@@ -536,7 +536,7 @@
     {
         "id":20,
         "img":"../../../images/imgbrt8.jpg",
-        "download":"",
+        "download":"../../../download/1/imgbrt8.pdf",
         "name":"Keep loving",
         "detail":{
             "d1":"Peach pink chrysanthemum peony: 5",
@@ -565,8 +565,8 @@
         {
             "id":21,
             "img":"../../../images/imga1.jpg",
-            "download":"",
-            "name":"Romantic Date",
+            "download":"../../../download/1/imga2.pdf",
+            "name":"Romantic ",
             "detail":{
                 "d1":"Carnation orange bunch: 2",
                 "d2":"Free Spirit Rose (10): 15",
@@ -587,14 +587,14 @@
                 "name":"Chrysanthemum"
             },
             "price":"24.99",
-            "new":1,
+            "new":2,
             "top":2
             
         },
         {
             "id":22,
             "img":"../../../images/imga2.jpg",
-            "download":"",
+            "download":"../../../download/1/imga2.pdf",
             "name":"Darling Blooms",
             "detail":{
                 "d1":"Single carnation with purple border: 5",
@@ -616,13 +616,13 @@
                 "name":"Chrysanthemum"
             },
             "price":"19.99",
-            "new":1,
-            "top":1
+            "new":2,
+            "top":2
         },
         {
             "id":23,
             "img":"../../../images/imga3.jpg",
-            "download":"",
+            "download":"../../../download/1/imga3.pdf",
             "name":"Adore",
             "detail":{
                 "d1":"Tana chrysanthemum: 2",
@@ -650,7 +650,7 @@
         {
             "id":24,
             "img":"../../../images/imga4.jpg",
-            "download":"",
+            "download":"../../../download/1/imga4.pdf",
             "name":"Eternal Bloom",
     
             "detail":{
@@ -673,13 +673,13 @@
                 "name":"Chrysanthemum"
             },
             "price":"69.99",
-            "new":1,
+            "new":2,
             "top":1
         },
         {
             "id":25,
             "img":"../../../images/imga5.jpg",
-            "download":"",
+            "download":"../../../download/1/imga5.pdf",
             "name":"Tiamo",
             "detail":{
                 "d1":"green carnations: 10",
@@ -707,7 +707,7 @@
         {
             "id":26,
             "img":"../../../images/imga6.jpg",
-            "download":"",
+            "download":"../../../download/1/imga6.pdf",
             "name":"Lady Queen ",
             "detail":{
                 "d1":"Blue Chrysanthemum flowers: 5",
@@ -735,7 +735,7 @@
         {
             "id":27,
             "img":"../../../images/imga7.jpg",
-            "download":"",
+            "download":"../../../download/1/imga7.pdf",
             "name":"Romantic Date",
             "detail":{
                 "d1":"White peony chrysanthemum: 4",
@@ -757,13 +757,13 @@
                 "name":"Chrysanthemum"
             },
             "price":"84.99",
-            "new":1,
+            "new":2,
             "top":1
         },
         {
             "id":28,
             "img":"../../../images/imga8.jpg",
-            "download":"",
+            "download":"../../../download/1/imga8.pdf",
             "name":"Sunshine",
             "detail":{
                 "d1":"Ecuadorian Rose explorer: 25",
@@ -791,7 +791,7 @@
         {
             "id":29,
             "img":"../../../images/imga9.jpg",
-            "download":"",
+            "download":"../../../download/1/imga9.pdf",
             "name":"Real Love",
             "detail":{
                 "d1":"Light blue Chrysanthemum peony: 5",
@@ -819,7 +819,7 @@
         {
             "id":30,
             "img":"../../../images/imga10.jpg",
-            "download":"",
+            "download":"../../../download/1/imga10.pdf",
             "name":" Ohara",
             "detail":{
                 "d1":"Single yellow carnation: 25",
@@ -847,7 +847,7 @@
         {
             "id":31,
             "img":"../../../images/imga11.jpg",
-            "download":"",
+            "download":"../../../download/1/imga11.pdf",
             "name":"Shyly",
             "detail":{
                 "d1":"Baby flowers dyed light pink: 1",
@@ -875,7 +875,7 @@
         {
             "id":32,
             "img":"../../../images/imga12.jpg",
-            "download":"",
+            "download":"../../../download/1/imga12.pdf",
             "name":"Cheers",
             "detail":{
                 "d1":"Single pink carnations: 10",
@@ -897,13 +897,13 @@
                 "name":"lilies"
             },
             "price":"179.99",
-            "new":1,
+            "new":2,
             "top":2
         },
         {
             "id":33,
             "img":"../../../images/imga13.jpg",
-            "download":"",
+            "download":"../../../download/1/imga13.pdf",
             "name":"Just love",
             "detail":{
                 "d1":"Baby flowers: 1",
@@ -931,7 +931,7 @@
         {
             "id":34,
             "img":"../../../images/imga14.jpg",
-            "download":"",
+            "download":"../../../download/1/imga14.pdf",
             "name":"Dating",
             "detail":{
                 "d1":"Purple heather: 2",
@@ -959,7 +959,7 @@
         {
             "id":35,
             "img":"../../../images/imga15.jpg",
-            "download":"",
+            "download":"../../../download/1/imga15.pdf",
             "name":"Brave",
             "detail":{
                 "d1":"Baby flowers: 1",
@@ -987,7 +987,7 @@
         {
             "id":36,
             "img":"../../../images/imga16.jpg",
-            "download":"",
+            "download":"../../../download/1/imga16.pdf",
             "name":"Encounter",
             "detail":{
                 "d1":"Light pink carnations: 10 ",
@@ -1015,7 +1015,7 @@
         {
             "id":37,
             "img":"../../../images/imga17.jpg",
-            "download":"",
+            "download":"../../../download/1/imga17.pdf",
             "name":"Sunny day",
             "detail":{
                 "d1":"Light orange Chrysanthemum peony: 3 ",
@@ -1043,7 +1043,7 @@
         {
             "id":38,
             "img":"../../../images/imga18.jpg",
-            "download":"",
+            "download":"../../../download/1/imga18.pdf",
             "name":"Congrats",
             "detail":{
                 "d1":"White rossi chrysanthemum: 10",
@@ -1071,7 +1071,7 @@
         {
             "id":39,
             "img":"../../../images/imga19.jpg",
-            "download":"",
+            "download":"../../../download/1/imga19.pdf",
             "name":"Sweet heart",
             "detail":{
                 "d1":"White auspicious wall: 5",
@@ -1099,7 +1099,7 @@
         {
             "id":40,
             "img":"../../../images/imga20.jpg",
-            "download":"",
+            "download":"../../../download/1/imga20.pdf",
             "name":"Purple Love",
             "detail":{
                 "d1":"Peach pink chrysanthemum peony: 5",
