@@ -1,192 +1,209 @@
-import { Col, Container, Row } from "react-bootstrap";
+import "./Contact.css"
+import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import { useState } from "react";
-import Alert from "react-bootstrap/Alert";
-
-import { MdEmail } from "react-icons/md";
-import { BsFillTelephoneFill } from "react-icons/bs";
-import { BsGeoAltFill } from "react-icons/bs";
-
-import "./Contact.css";
-import Scroll from "../Scroll/Scroll";
+import Spinner from "react-bootstrap/Spinner";
+import { Container } from "react-bootstrap";
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
+import { Card } from "react-bootstrap";
+import { motion } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function ContactUs() {
-  const [validated, setValidated] = useState(false);
-  const [fName, setFName] = useState("");
-  const [lName, setLName] = useState("");
+  useEffect(() => {
+    AOS.init({ duration: 1700 });
+  }, []);
+
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
-  const [tel, setTel] = useState("");
   const [message, setMessage] = useState("");
-  const [success, setSuccess] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-  const handleFNameChange = (e) => {
-    setFName(e.target.value);
-  };
-  const handleLNameChange = (e) => {
-    setLName(e.target.value);
-  };
-  const handleTelChange = (e) => {
-    setTel(e.target.value);
-  };
-  const handleMessageChange = (e) => {
-    setMessage(e.target.value);
+  const handlePhoneChange = (value) => {
+    setPhoneNumber(value);
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setSuccess(false);
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!firstName || !lastName) {
+      setErrorMessage("You must enter your name");
     } else {
-      setSuccess(true);
-    }
+      setIsSubmitting(true);
 
-    setValidated(true);
+      setTimeout(() => {
+        setSuccessMessage(
+          "Your message has been submitted. We will contact you shortly."
+        );
+        setErrorMessage("");
+        setIsSubmitting(false);
+      }, 2000);
+
+      setFirstName("");
+      setLastName("");
+      setEmail("");
+      setMessage("");
+      setPhoneNumber("");
+    }
   };
-  const handleResetButton = (event) => {
-    event.preventDefault();
-    setSuccess(false);
-    setFName("");
-    setLName("");
-    setEmail("");
-    setTel("");
-    setMessage("");
-  };
+
   return (
-    <Container className="mt-5 contact">
-      <Scroll/>
-      <Row>
-        <Col xs={12} sm={6} md={6}>
-          <p>
-            <span className="contactTitle">
-              <MdEmail className="icon Mail" />
-              Email:
-            </span>{" "}
-            <a href="mailto:eyeonicsupport@gmail.com">
-              eyeonicsupport@gmail.com
-            </a>
-          </p>
-          <p>
-            <span className="contactTitle">
-              <BsFillTelephoneFill className="icon Telephone" />
-              Tel:{" "}
-            </span>
-            <a href="tel:123456789">123456789</a>
-          </p>
-          <p>
-            <span className="contactTitle">
-              <BsGeoAltFill className="icon location" />
-              Location:{" "}
-            </span>
-            391A, Ho Chi Minh City, Viet Nam.{" "}
-          </p>
-          <Container>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d823.9244679272601!2d106.68185756570962!3d10.790823431113182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fd659fff3db%3A0x136a08813b1a880f!2sSkillking!5e0!3m2!1svi!2s!4v1698916779475!5m2!1svi!2s"
-              width="90%"
-              height={300}
-              style={{ border: 0 }}
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <Container fluid="md" className="text-center">
+        <Row className="text-center mt-5 " data-aos="fade-right">
+          <h2 className="fw-bold">Please Give Us Your Information</h2>
+        </Row>
+        <Row className="mt-5 mb-4">
+          <Col xs={12} md={6} data-aos="fade-up">
+            <Card className="custom-frame">
+              <Form onSubmit={handleSubmit} data-aos="zoom-in">
+                <Row>
+                  <Col md={6}>
+                    <Form.Group
+                      className="mb-3 contactus-group"
+                      controlId="lastName"
+                    >
+                      <Form.Label className="custom-container">
+                        Last name
+                      </Form.Label>
+                      <Form.Control
+                        type="text"
+                        placeholder="Nghia"
+                        onChange={(e) => setLastName(e.target.value)}
+                        value={lastName}
+                        disabled={isSubmitting}
+                      />
+                    </Form.Group>
+                  </Col>
+                  <Col md={6}>
+                    <Form.Group
+                      className="mb-3 contactus-group"
+                      controlId="firstName"
+                    >
+                      <Form.Label className="custom-container">
+                        First name
+                      </Form.Label>
+                      <Form.Control
+                        type="text"
+                        placeholder="Nguyen Thanh"
+                        onChange={(e) => setFirstName(e.target.value)}
+                        value={firstName}
+                        disabled={isSubmitting}
+                      />
+                    </Form.Group>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <Form.Group
+                      className="mb-3 contactus-group"
+                      controlId="exampleForm.ControlInput2"
+                    >
+                      <Form.Label className="custom-container">
+                        Email
+                      </Form.Label>
+                      <Form.Control
+                        type="email"
+                        placeholder="name@example.com"
+                        onChange={(e) => setEmail(e.target.value)}
+                        value={email}
+                        disabled={isSubmitting}
+                      />
+                    </Form.Group>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <Form.Group
+                      className="mb-3 contactus-group"
+                      controlId="exampleForm.ControlPhone"
+                    >
+                      <Form.Label className="custom-container">
+                        Phone
+                      </Form.Label>
+                      <PhoneInput
+                        international
+                        defaultCountry="VN"
+                        value={phoneNumber}
+                        onChange={handlePhoneChange}
+                        disabled={isSubmitting}
+                      />
+                    </Form.Group>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <Form.Group
+                      className="mb-3 contactus-group"
+                      controlId="exampleForm.ControlTextarea1"
+                    >
+                      <Form.Label className="text-left">Message</Form.Label>
+                      <Form.Control
+                        as="textarea"
+                        placeholder="Type your message here"
+                        rows={3}
+                        onChange={(e) => setMessage(e.target.value)}
+                        value={message}
+                        disabled={isSubmitting}
+                      />
+                    </Form.Group>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    {isSubmitting ? (
+                      <Spinner animation="border" role="status">
+                        <span className="visually-hidden">Loading...</span>
+                      </Spinner>
+                    ) : (
+                      <Button type="submit">Submit</Button>
+                    )}
+                  </Col>
+                </Row>
+                {errorMessage && (
+                  <Row>
+                    <Col>
+                      <p className="text-danger">{errorMessage}</p>
+                    </Col>
+                  </Row>
+                )}
+                {successMessage && (
+                  <Row>
+                    <Col>
+                      <p className="text-success">{successMessage}</p>
+                    </Col>
+                  </Row>
+                )}
+              </Form>
+            </Card>
+          </Col>
+          <Col xs={12} md={6} data-aos="fade-up">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d823.9244679272601!2d106.68185756570962!3d10.790823431113182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752fd659fff3db%3A0x136a08813b1a880f!2sSkillking!5e0!3m2!1svi!2s!4v1698916779475!5m2!1svi!2s"
+              width="100%"
+              height="560"
               allowFullScreen=""
               loading="lazy"
-              title="map"
+              title="Google Map"
+              frameBorder="0"
             ></iframe>
-          </Container>
-        </Col>
-        <Col xs={12} sm={6} md={6} className="boder">
-          <Form noValidate validated={validated} onSubmit={handleSubmit}>
-            <Row>
-              {success && (
-                <Alert variant="success">
-                  <h2>
-                    <span className="mess-success">
-                      Message send successfully{" "}
-                    </span>
-                  </h2>
-                </Alert>
-              )}
-              <Col>
-                <Form.Label>First name</Form.Label>
-                <Form.Control
-                  type="text"
-                  required
-                  onChange={handleFNameChange}
-                  value={fName}
-                />
-                <Form.Control.Feedback type="invalid">
-                  Please enter your first name.
-                </Form.Control.Feedback>
-              </Col>
-              <Col>
-                <Form.Label>Last name</Form.Label>
-                <Form.Control
-                  type="text"
-                  required
-                  onChange={handleLNameChange}
-                  value={lName}
-                />
-                <Form.Control.Feedback type="invalid">
-                  Please enter your last name.
-                </Form.Control.Feedback>
-              </Col>
-            </Row>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Email</Form.Label>
-              <Form.Control
-                type="email"
-                required
-                value={email}
-                onChange={handleEmailChange}
-              />
-              <Form.Control.Feedback type="invalid">
-                Please enter a valid email address.
-              </Form.Control.Feedback>
-            </Form.Group>
-            <Form.Group className="mb-3">
-              <Form.Label>Tel</Form.Label>
-              <Form.Control
-                type="number"
-                required
-                value={tel}
-                onChange={handleTelChange}
-              />
-              <Form.Control.Feedback type="invalid">
-                Please enter your phone number.
-              </Form.Control.Feedback>
-            </Form.Group>
-            <Form.Group className="mb-3">
-              <Form.Label>Message</Form.Label>
-              <Form.Control
-                as="textarea"
-                rows={3}
-                required
-                value={message}
-                onChange={handleMessageChange}
-              />
-              <Form.Control.Feedback type="invalid">
-                Please enter your message.
-              </Form.Control.Feedback>
-            </Form.Group>
-            <Row>
-              <Col sm={5}>
-                <Button type="submit" className="mb-3">
-                  SEND MESSAGE
-                </Button>
-              </Col>
-              <Col sm={3}>
-                <Button type="reset" onClick={handleResetButton}>
-                  RESET
-                </Button>
-              </Col>
-            </Row>
-          </Form>
-        </Col>
-      </Row>
-    </Container>
+          </Col>
+        </Row>
+      </Container>
+      
+    </motion.div>
   );
 }
 

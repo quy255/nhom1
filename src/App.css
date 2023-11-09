@@ -7,11 +7,14 @@
 }
 .footer{
     font-size: 16px;
-    padding-top : 10%;
+    padding-top : 20px;
     background-color:white;
     color: rgb(2, 4, 4);
 }
 .mainmenu{
     background-color: beige;
     
+}
+.footer{
+    border: 1px solid black;
 }

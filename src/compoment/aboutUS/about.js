@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-import Footer from "../Footer/Footer";
+
 import Company from "./img/1.png";
 import CEO from "./img/2.png";
 import "./About.css"
@@ -7,8 +7,12 @@ import Product from "./img/3.jpg";
 import "./About.scss";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function AboutUs() {
-  
+    useEffect(() => {
+        AOS.init({ duration: 1700 });
+      }, []);
   return (
     <motion.div
       className="aboutus"
@@ -17,6 +21,7 @@ function AboutUs() {
       exit={{ opacity: 0 }}
     >
       <Container fluid="lg">
+      <div data-aos="fade-down-right">
         <div className="aboutus-content">
           <div className="aboutus-title" data-aos="fade-right">
             <h1>BLOOMING PETALS - We are your companions</h1>
@@ -31,6 +36,7 @@ function AboutUs() {
             <div className="aboutus-img-company" data-aos="zoom-in">
               <img className="img" src={Company} alt="company" />
             </div>
+          </div>
           </div>
           <div className="aboutus-fouder" data-aos="fade-up">
             <div className="aboutus-img-ceo" data-aos="fade-right">
@@ -52,9 +58,7 @@ function AboutUs() {
           
         </div>
       </Container>
-      <div>
-        <Footer />
-      </div>
+      
     </motion.div>
   );
 }

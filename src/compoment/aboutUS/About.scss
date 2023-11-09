@@ -1,4 +1,4 @@
-@import "../../compoment/variables/varibles.scss";
+@import "../variables/varibles.scss";
 .aboutus {
     .aboutus-content {
         margin-top: 50px;
@@ -33,10 +33,10 @@
             }
         }
         .aboutus-fouder {
-            margin-top: 30px;
+            align-items: center;
             display: flex;
             flex-direction: row;
-            align-items: center;
+            margin-top: 30px;
             .aboutus-img-ceo {
                 .img-ceo {
                     height: 500px;
@@ -199,4 +199,26 @@
             }
         }
     }
+}
+.aboutus-fouder {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.aboutus-product-featured {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.img-company {
+    max-width: 800px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }

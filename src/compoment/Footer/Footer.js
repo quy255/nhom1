@@ -1,17 +1,29 @@
 import React from 'react';
 import "./Footer.css"
+import { motion } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 
 export default function Footer () {
+  useEffect(() => {
+    AOS.init({ duration: 1700 });
+  }, []);
   return (
-    <MDBFooter >
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+  >
+    <MDBFooter className='footer' data-aos="fade-down-right" >
       <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
         <div className='me-5 d-none d-lg-block'>
           <span>Get connected with us on social networks:</span>
         </div>
 
         <div>
-          <a href=''>
+          <a href=''className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='facebook-f' />
           </a>
           <a href='' className='me-4 text-reset'>
@@ -122,6 +134,7 @@ export default function Footer () {
                 <MDBIcon color='secondary' icon='phone' className='me-3' /> + 01 234 567 88
               </p>
               <p>
+                
                 <MDBIcon color='secondary' icon='print' className='me-3' /> + 01 234 567 89
               </p>
             </MDBCol>
@@ -132,9 +145,10 @@ export default function Footer () {
       <div className='text-center' >
         © 2021 Copyright:
         <a>
-          MDBootstrap.com
+          Blooming 2023
         </a>
       </div>
     </MDBFooter>
+    </motion.div>
   );
 }

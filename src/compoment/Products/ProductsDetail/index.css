@@ -1,0 +1,30 @@
+.detail1{
+    text-align: center;
+    padding: 10%;
+}
+.detail2{
+    padding: 10%;
+}
+.detail3{
+    font-size: 26px;
+    font-family: sans-serif;
+    color: #d20b0b;
+}
+
+.detail4{
+    padding-left: 10px;
+    color: #a6a6a6;
+    font-size: 16px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.detail5{
+    color: #b11212;
+    font-size: 26px;
+}
+.detail6{
+    font-size: 18px;
+}
+.price{
+    
+    font-size: 20px;
+}

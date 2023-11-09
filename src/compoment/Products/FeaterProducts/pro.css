@@ -1,13 +1,19 @@
-.a1{
-    background-color: bisque;
-    padding: 10px;
-    padding-top: 10px;
-}
+
 .a2{
-    padding: 10px 10px 10px 10px;
+    padding: 15px ; 
 }
-.a3{
-    background-color: rgb(206, 218, 115);
-    padding: 10px;
-    padding-top: 10px;
+h1{
+    padding: 19px;
+    font-size: 30px;
+    font-family: fangsong;
+    color: #ff2511a3;
+    text-align: center;
+}
+.boder01{
+    padding: 35px;
+    border: 1px solid rgb(155, 155, 148);
+    box-shadow: 2px 2px 2px 2px rgb(155, 172, 180);
+}
+.boder01:hover{
+    padding: 20px;
 }

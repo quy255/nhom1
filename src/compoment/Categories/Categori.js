@@ -7,8 +7,14 @@ import { useParams } from "react-router-dom";
 import { Alert } from 'react-bootstrap';
 import Pagination from "../Pagination/Pagination"
 import { useState } from 'react';
-
+import { motion } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 function Categori() {
+  useEffect(() => {
+    AOS.init({ duration: 1700 });
+  }, []);
   const {id} = useParams();
   let items = products.filter((items) => items.category.id == id);
   console.log(items);
@@ -22,7 +28,13 @@ function Categori() {
   const offset = currentPage * PER_PAGE;
   const currentPageData = items.slice(offset,offset + PER_PAGE);
   const pageCount = Math.ceil(items.length / PER_PAGE);
+  
   return (
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+  >
     <Container>
     {c == null && (
         <Alert variant='danger'>
@@ -38,15 +50,15 @@ function Categori() {
     <Row>
       {currentPageData.map((items, index) => (
       <Col xs={12} sm={6} md={3} key={index} className='a2'>
-      <Card >
+      <Card className='boder01'>
       <Link to={`/detail/${items.id}`}>
-    <Card.Img variant="top" src={items.img}  alt={items.name}/>
+    <Card.Img variant="top" src={items.img} data-aos="zoom-in" alt={items.name}/>
         </Link>
     <Card.Body>
     <Link to={`/detail/${items.id}`}>
       <Card.Title>{items.name}</Card.Title>
       </Link>
-      <Card.Text>{items.price}
+      <Card.Text>${items.price}
       </Card.Text>
       <Link to={`/detail/${items.id}`}>
       <Button variant="primary"> Detail</Button>
@@ -65,6 +77,7 @@ function Categori() {
     </Col>
   </Row>
   </Container>
+  </motion.div>
   )
 }
 export default Categori;
