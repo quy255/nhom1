@@ -12,8 +12,9 @@ h1{
 .boder01{
     padding: 35px;
     border: 1px solid rgb(155, 155, 148);
-    box-shadow: 2px 2px 2px 2px rgb(155, 172, 180);
+    box-shadow: 2px 2px 2px 2px rgb(149, 193, 214);
 }
 .boder01:hover{
     padding: 20px;
+    box-shadow: 2px 2px 2px 2px rgb(104, 128, 52);
 }

@@ -21,7 +21,7 @@ function Categori() {
   let c = products.filter((c) => c.category.id == id);
   c = c[0];
   const PER_PAGE = 4;
-  const [currentPage,setcurrentPage] = useState(1);
+  const [currentPage,setcurrentPage] = useState(0);
   const handPageClick = ({selected: selecTedPage}) => {
     setcurrentPage(selecTedPage);
   };

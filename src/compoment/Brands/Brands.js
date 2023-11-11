@@ -21,7 +21,7 @@ function Brands() {
   let b = products.filter((b) => b.brands.id == id);
   b = b[0];
   const PER_PAGE = 4;
-  const [currentPage,setcurrentPage] = useState(1);
+  const [currentPage,setcurrentPage] = useState(0);
   const handPageClick = ({selected: selecTedPage}) => {
     setcurrentPage(selecTedPage);
   };

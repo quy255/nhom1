@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { Header, Grid, Item, Table, Label } from "semantic-ui-react";
 import ProductCard from "./ProductCard";
-import {  Row , Col } from 'react-bootstrap';
+import {  Row , Col, Container } from 'react-bootstrap';
 import Pagination from "../../Pagination/Pagination"
 import "./Pro.css"
-
+import { motion } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const style = {
   h1: {
     marginTop: "3em"
@@ -35,8 +38,8 @@ function ProductComparison ({ products })  {
     );
     setSelectedItems((selectedItems) => filteredItems);
   };
-  const PER_PAGE = 4;
-  const [currentPage,setcurrentPage] = useState(1);
+  const PER_PAGE = 8;
+  const [currentPage,setcurrentPage] = useState(0);
   const handPageClick = ({selected: selecTedPage}) => {
     setcurrentPage(selecTedPage);
   };
@@ -46,7 +49,7 @@ function ProductComparison ({ products })  {
 
   return (
    
-    <div>
+    <Container data-aos="fade-down-right">
       <h1>Compare Item</h1>
       {selectedItems.length > 0 && (
         <Table definition>
@@ -94,20 +97,25 @@ function ProductComparison ({ products })  {
           </Table.Body>
         </Table>
       )}
-      <Grid columns={selectedItems.length} stackable padded divided>
-        <Item.Group className="Card">
+        <Row>
+        
+        
           {currentPageData.map((product) => (
+            <Col xs={12} sm={6} md={6} lg={3} key={product.id} className="card1">
             <ProductCard
             
-              key={product.id}
+              className="Card"
               product={product}
               selected={selectedItems}
               addToCompare={addToCompare}
               removeFromCompare={removeFromCompare}
             />
+            </Col>
           ))}
-        </Item.Group>
-      </Grid>
+          
+       
+        
+        </Row>
       <Row>
     <Col>
     <div className='card pagination'>
@@ -115,7 +123,8 @@ function ProductComparison ({ products })  {
     </div>
     </Col>
   </Row>
-    </div>
+  </Container>
+    
     
     
   );
