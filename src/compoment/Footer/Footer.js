@@ -104,7 +104,7 @@ export default function Footer () {
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='http://localhost:3000/categories/2' className='text-reset'>
                 Chrysanthemum
                 </a>
               </p>

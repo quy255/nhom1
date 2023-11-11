@@ -1,5 +1,4 @@
 import { Container } from "react-bootstrap";
-
 import Company from "./img/1.png";
 import CEO from "./img/2.png";
 import "./About.css"

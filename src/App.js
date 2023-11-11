@@ -14,7 +14,7 @@ import Slideshow from './compoment/Slideshow/Slideshow';
 import Produc from "./compoment/Products/Produc";
 
 import ContactUs from './compoment/contact/contact';
-import AboutUs from './compoment/AboutUS/About';
+import AboutUs from './compoment/AboutUS/AboutUS';
 import Product from "./compoment/Products/ProductCompare"
 
 function App() {
@@ -33,7 +33,6 @@ function App() {
       <Route path='/contact-us/' element={<ContactUs />}></Route>
       <Route path='/about-us/' element={<AboutUs />}></Route>
       <Route path='/productcompare/' element={<Product />}></Route>
-      
       
      </Routes>
     </Container>
