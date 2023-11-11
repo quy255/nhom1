@@ -1,8 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Mainmenu from "./compoment/Mainmenu/Mainmenu"
 import Footer from './compoment/Footer/Footer';
 import { Route , Routes } from 'react-router-dom';
@@ -12,9 +10,8 @@ import Categori from './compoment/Categories/Categori';
 import Brands from "./compoment/Brands/Brands";
 import Slideshow from './compoment/Slideshow/Slideshow';
 import Produc from "./compoment/Products/Produc";
-
 import ContactUs from './compoment/contact/contact';
-import AboutUs from './compoment/AboutUS/AboutUS';
+import AboutUs from './compoment/AboutUs/AboutUs';
 import Product from "./compoment/Products/ProductCompare"
 
 function App() {
